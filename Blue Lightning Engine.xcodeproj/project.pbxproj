@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D85FEF61C94D5150085B113 /* libGLEW.1.13.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D85FEF51C94D5150085B113 /* libGLEW.1.13.0.dylib */; };
+		1D85FEF81C94D5380085B113 /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D85FEF71C94D5380085B113 /* libglfw3.3.1.dylib */; };
+		1DD1107D1C94D17500FA67D8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD1107C1C94D17500FA67D8 /* OpenGL.framework */; };
 		1DEDF5B21C94A71800953F2A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDF5B11C94A71800953F2A /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D20B8061C9570ED000B6874 /* Shapes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shapes; path = "Blue Lightning Engine/Shapes"; sourceTree = "<group>"; };
+		1D85FEF51C94D5150085B113 /* libGLEW.1.13.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.13.0.dylib; path = ../../../../usr/local/Cellar/glew/1.13.0/lib/libGLEW.1.13.0.dylib; sourceTree = "<group>"; };
+		1D85FEF71C94D5380085B113 /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = "<group>"; };
+		1DD1107C1C94D17500FA67D8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		1DEDF5AE1C94A71800953F2A /* Blue Lightning Engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Blue Lightning Engine"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DEDF5B11C94A71800953F2A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D85FEF81C94D5380085B113 /* libglfw3.3.1.dylib in Frameworks */,
+				1D85FEF61C94D5150085B113 /* libGLEW.1.13.0.dylib in Frameworks */,
+				1DD1107D1C94D17500FA67D8 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +51,10 @@
 		1DEDF5A51C94A71800953F2A = {
 			isa = PBXGroup;
 			children = (
+				1D20B8061C9570ED000B6874 /* Shapes */,
+				1D85FEF71C94D5380085B113 /* libglfw3.3.1.dylib */,
+				1D85FEF51C94D5150085B113 /* libGLEW.1.13.0.dylib */,
+				1DD1107C1C94D17500FA67D8 /* OpenGL.framework */,
 				1DEDF5B01C94A71800953F2A /* Blue Lightning Engine */,
 				1DEDF5AF1C94A71800953F2A /* Products */,
 			);
@@ -205,6 +219,17 @@
 		1DEDF5B61C94A71800953F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.13.0/lib,
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +237,17 @@
 		1DEDF5B71C94A71800953F2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.13.0/lib,
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +271,7 @@
 				1DEDF5B71C94A71800953F2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
