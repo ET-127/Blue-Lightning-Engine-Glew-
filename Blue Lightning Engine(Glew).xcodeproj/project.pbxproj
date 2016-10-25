@@ -30,7 +30,7 @@
 		1D85FEF51C94D5150085B113 /* libGLEW.1.13.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.13.0.dylib; path = ../../../../usr/local/Cellar/glew/1.13.0/lib/libGLEW.1.13.0.dylib; sourceTree = "<group>"; };
 		1D85FEF71C94D5380085B113 /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = "<group>"; };
 		1DD1107C1C94D17500FA67D8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		1DEDF5AE1C94A71800953F2A /* Blue Lightning Engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Blue Lightning Engine"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DEDF5AE1C94A71800953F2A /* Blue Lightning Engine(Glew) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Blue Lightning Engine(Glew)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DEDF5B11C94A71800953F2A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +55,7 @@
 				1D85FEF71C94D5380085B113 /* libglfw3.3.1.dylib */,
 				1D85FEF51C94D5150085B113 /* libGLEW.1.13.0.dylib */,
 				1DD1107C1C94D17500FA67D8 /* OpenGL.framework */,
-				1DEDF5B01C94A71800953F2A /* Blue Lightning Engine */,
+				1DEDF5B01C94A71800953F2A /* Blue Lightning Engine(Glew) */,
 				1DEDF5AF1C94A71800953F2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,25 +63,26 @@
 		1DEDF5AF1C94A71800953F2A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1DEDF5AE1C94A71800953F2A /* Blue Lightning Engine */,
+				1DEDF5AE1C94A71800953F2A /* Blue Lightning Engine(Glew) */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1DEDF5B01C94A71800953F2A /* Blue Lightning Engine */ = {
+		1DEDF5B01C94A71800953F2A /* Blue Lightning Engine(Glew) */ = {
 			isa = PBXGroup;
 			children = (
 				1DEDF5B11C94A71800953F2A /* main.cpp */,
 			);
+			name = "Blue Lightning Engine(Glew)";
 			path = "Blue Lightning Engine";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1DEDF5AD1C94A71800953F2A /* Blue Lightning Engine */ = {
+		1DEDF5AD1C94A71800953F2A /* Blue Lightning Engine(Glew) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEDF5B51C94A71800953F2A /* Build configuration list for PBXNativeTarget "Blue Lightning Engine" */;
+			buildConfigurationList = 1DEDF5B51C94A71800953F2A /* Build configuration list for PBXNativeTarget "Blue Lightning Engine(Glew)" */;
 			buildPhases = (
 				1DEDF5AA1C94A71800953F2A /* Sources */,
 				1DEDF5AB1C94A71800953F2A /* Frameworks */,
@@ -91,9 +92,9 @@
 			);
 			dependencies = (
 			);
-			name = "Blue Lightning Engine";
+			name = "Blue Lightning Engine(Glew)";
 			productName = "Blue Lightning Engine";
-			productReference = 1DEDF5AE1C94A71800953F2A /* Blue Lightning Engine */;
+			productReference = 1DEDF5AE1C94A71800953F2A /* Blue Lightning Engine(Glew) */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1DEDF5A91C94A71800953F2A /* Build configuration list for PBXProject "Blue Lightning Engine" */;
+			buildConfigurationList = 1DEDF5A91C94A71800953F2A /* Build configuration list for PBXProject "Blue Lightning Engine(Glew)" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -122,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1DEDF5AD1C94A71800953F2A /* Blue Lightning Engine */,
+				1DEDF5AD1C94A71800953F2A /* Blue Lightning Engine(Glew) */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +231,7 @@
 					/usr/local/Cellar/glfw3/3.1.2/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Blue Lightning Engine(Glew)";
 			};
 			name = Debug;
 		};
@@ -248,14 +249,14 @@
 					/usr/local/Cellar/glfw3/3.1.2/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Blue Lightning Engine(Glew)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEDF5A91C94A71800953F2A /* Build configuration list for PBXProject "Blue Lightning Engine" */ = {
+		1DEDF5A91C94A71800953F2A /* Build configuration list for PBXProject "Blue Lightning Engine(Glew)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEDF5B31C94A71800953F2A /* Debug */,
@@ -264,7 +265,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEDF5B51C94A71800953F2A /* Build configuration list for PBXNativeTarget "Blue Lightning Engine" */ = {
+		1DEDF5B51C94A71800953F2A /* Build configuration list for PBXNativeTarget "Blue Lightning Engine(Glew)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEDF5B61C94A71800953F2A /* Debug */,
